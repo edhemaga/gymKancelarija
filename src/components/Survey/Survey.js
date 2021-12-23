@@ -13,7 +13,7 @@ function Survey() {
 
     const [count, setCount] = React.useState(1);
     const checkIndex = (index) => {
-        console.log(index); axios.post(`http://localhost:5000/survey/`, { key: index });
+        console.log(index); axios.post(`https://presyontest-survey.herokuapp.com/survey/`, { key: index });
     }
 
     return (
