@@ -98,6 +98,7 @@ function App() {
     dispatch(clearBasket());
   }
   /*---------------*/
+  
   /* idle timer */
   const { getRemainingTime, getLastActiveTime } = useIdleTimer({
     timeout: 1000 * 5, //1000ms puta X; bilo 15
