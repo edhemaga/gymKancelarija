@@ -33,7 +33,7 @@ import Novi1 from "../src/assets/novi1.png";
 import Novi2 from "../src/assets/novi2.png";
 import Novi3 from "../src/assets/novi3.png";
 
-import Logo from "../src/assets/logoCrni.png";
+import LogoCrni from "../src/assets/logoCrni.png";
 
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; //za ikonice
@@ -98,10 +98,10 @@ function App() {
     dispatch(clearBasket());
   }
   /*---------------*/
-  
+
   /* idle timer */
   const { getRemainingTime, getLastActiveTime } = useIdleTimer({
-    timeout: 1000 * 5, //1000ms puta X; bilo 15
+    timeout: 1000 * 60, //1000ms puta X; bilo 15
     onIdle: handleOpen,
     // onActive: handleClose,
     // onAction: handleClose,
@@ -142,9 +142,9 @@ function App() {
                   }}
                 ></ArrowBackIcon>
 
-                <Button onClick={handleSurvey}>
+                {/* <Button onClick={handleSurvey}>
                   <b className={classes.glasaj}>Glasaj</b>
-                </Button>
+                </Button> */}
               </Link>
             </Grid>
             <Grid item xs={2}></Grid>
@@ -154,7 +154,7 @@ function App() {
                   <img
                     onClick={handleAll}
                     className={classes.image}
-                    src={hazretiNikola}
+                    src={logo}
                     align="center"
                     alt="icon"
                     height="70"
@@ -236,7 +236,7 @@ function App() {
                 height: "100vh",
               }}
               src={
-                Novi1
+                Slika1
               }
             />
           </div>
@@ -252,7 +252,7 @@ function App() {
                 height: "100vh",
               }}
               src={
-                Novi2
+                LogoCrni
               }
             />
           </div>
@@ -268,7 +268,7 @@ function App() {
                 height: "100vh",
               }}
               src={
-                Novi3
+                Slika2
               }
             />
           </div>

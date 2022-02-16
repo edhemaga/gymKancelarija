@@ -29,7 +29,6 @@ function Home() {
               item
               xs={12}
               sm={12}
-
             >
               <Items />
             </Grid>

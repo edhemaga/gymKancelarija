@@ -12,7 +12,7 @@ export default makeStyles((theme) => ({
     textAlign: 'center',
   },
   container: {
-    backgroundImage: 'url("https://thumbs.dreamstime.com/b/christmas-pattern-white-snowflake-blue-background-top-view-christmas-pattern-white-snowflake-blue-background-top-view-132470749.jpg")'
+    background: 'white'
   }
 
 }));

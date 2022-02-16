@@ -18,8 +18,26 @@ function Items() {
     <div
       style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr" }}
     >
+      {selectedGender == "F" || selectedGender == "All" ?
+        items
+          .filter((item) => item.name.includes("Runner"))
+          .map((filteredItem) => (
+            <div
+              key={filteredItem._id}
+              style={{
+                margin: "15px auto",
+                width: "90%",
+              }}
+            >
+              <Link to={`/${window.location.pathname.split('/')[1]}/${filteredItem._id}`}>
+                <Item item={filteredItem} />
+              </Link>
+            </div>
+          ))
+        : null}
+
       {selectedGender == "All"
-        ? items.map((filteredItem) => (
+        ? items.filter((item) => !item.name.includes("Runner")).map((filteredItem) => (
           <div
             key={filteredItem._id}
             style={{
@@ -34,7 +52,7 @@ function Items() {
         ))
         : null}
       {items
-        .filter((item) => item.gender == selectedGender)
+        .filter((item) => item.gender == selectedGender && !item.name.includes("Runner"))
         .map((filteredItem) => (
           <div
             key={filteredItem._id}

@@ -31,6 +31,7 @@ function IndividualItem({ match }) {
 
   async function getItemById(id) {
     const { data } = await fetchItem(id);
+    console.log(data);
     setClickedItem(data);
   }
 

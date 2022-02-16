@@ -25,6 +25,9 @@ function Survey() {
             <div className={classes.surveyLogoWrapper}>
                 <img className={classes.surveyLogo} src={logo} alt="Logo" />
             </div>
+            <div className={classes.title}>
+                <h2>Glasajte koji artikal želite vidjeti na popustu</h2>
+            </div>
             <div >
                 {count === 1 ?
                     <div className={classes.survey1}>

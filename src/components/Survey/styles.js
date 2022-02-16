@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core/styles";
-import { withThemeCreator } from "@material-ui/styles";
 
 export default makeStyles({
     surveyContainer: {
@@ -22,19 +21,18 @@ export default makeStyles({
         width: '100%',
         display: 'flex',
         position: 'absolute',
-        top: '50px',
+        top: '100px',
         zIndex: 1000
     },
     survey1items: {
         margin: 'auto',
-        display: 'flex', 
-        width: '50%',
+        display: 'flex',
     },
     survey2: {
         width: '100%',
         display: 'flex',
         position: 'absolute',
-        top: '50px',
+        top: '100px',
         zIndex: 500
     },
     survey2items: {
@@ -45,7 +43,7 @@ export default makeStyles({
         width: '100%',
         display: 'flex',
         position: 'absolute',
-        top: '50px'
+        top: '100px'
     },
     survey3items: {
         margin: 'auto',
@@ -62,4 +60,7 @@ export default makeStyles({
         maxHeight: "550px",
         borderRadius: '3px',
     },
+    title: {
+        textAlign: 'center'
+    }
 });
